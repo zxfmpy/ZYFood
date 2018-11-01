@@ -1,0 +1,6 @@
+framework module LibMMFoodFramework {
+  umbrella header "LibMMFoodFramework.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,18 @@
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
+
+# You can uncomment the lines below and add your own
+# team selection in case you're in multiple teams
+# team_name "Felix Krause"
+# team_id "Q2CBPJ58CA"
+
+# To select a team for iTunes Connect use
+# itc_team_name "Company Name"
+# itc_team_id "18742801"
+
+app_identifier "com.zxfmpy.food" # The bundle identifier of your app
+apple_id "zxfmpy@163.com" # Your Apple email address
+team_id "M2R95ED272"
+team_name "Xiaofeng Zuo"
+itc_team_name "Xiaofeng Zuo"
+itc_team_id "118958587"

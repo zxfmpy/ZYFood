@@ -1,0 +1,77 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+#蒲公英api_key和user_key
+api_key="1bff479c42768133b4be01cf5579b06f"
+user_key="5617512b2f2080ce6aae6594a75e3f40"
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :adhoc do
+    # add actions here: https://docs.fastlane.tools/actions
+    # 编译代码
+    gym(
+        workspace: "ZYFood_iPhone.xcworkspace",
+        scheme: "ZYFood_iPhone",
+        export_method:"ad-hoc", #["app-store", "ad-hoc", "package", "enterprise", "development", "developer-id"]
+        output_directory:"./build/adhoc",
+        archive_path:"./Archive/adhoc",       
+        )
+
+    match(
+        git_url: "https://github.com/zxfmpy/certificates.git",
+        type: "adhoc" ,#can be appstore,adhoc, development,enterprise
+        app_identifier:"com.zxfmpy.food",
+        username:"zxfmpy@163.com",
+        readonly: true
+        )
+    puts "adhoc版本:开始上传蒲公英"
+    # 开始上传蒲公英
+    pgyer(api_key: "#{api_key}", user_key: "#{user_key}")
+
+  end
+
+  lane :release do
+    # add actions here: https://docs.fastlane.tools/actions
+    gym(
+        workspace: "ZYFood_iPhone.xcworkspace",
+        scheme: "ZYFood_iPhone",
+        export_method:"app-store",
+        output_directory:"./build/release",
+        archive_path:"./Archive/release"
+        )
+
+    # 增加build版本号
+    #increment_build_number
+    match(
+    	git_url:"https://github.com/zxfmpy/certificates.git",
+    	type:"appstore",#can be appstore,adhoc, development,enterprise
+    	readonly:true,
+    	app_identifier:"com.zxfmpy.food",
+        username:"zxfmpy@163.com",
+    	)
+
+    # 发布到Apple Store
+    deliver(
+        username:"zxfmpy@163.com",
+        skip_screenshots:true,
+        force:true,
+        #submit_for_review:true,
+        )
+  end
+
+end

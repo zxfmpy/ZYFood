@@ -1,0 +1,22 @@
+
+workspace 'ZYFood_iPhone.xcworkspace'
+inhibit_all_warnings!
+use_frameworks!
+
+platform :ios, '8.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitee.com/zxfmpy/DWPrivateSpec.git'
+
+target 'ZYFood_iPhone' do
+
+    pod 'WeexSDK', '~> 0.18.0'
+
+    pod 'PromisesObjC', '~> 1.2.2'
+
+    pod 'MMComonCompontFramework', '~> 2.0.1'
+
+    pod 'LibMMFoodFramework', '~> 1.0.3'
+end
+
+

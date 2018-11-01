@@ -1,0 +1,67 @@
+PODS:
+  - CTMediator (25)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.0.6)
+  - LibMMFoodFramework (1.0.3):
+    - MMComonCompontFramework (~> 2.0.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - MMComonCompontFramework (2.0.1):
+    - CTMediator (~> 25)
+    - FMDB (~> 2.7.2)
+    - IQKeyboardManager (~> 6.0.3)
+    - Masonry (~> 1.1.0)
+    - MBProgressHUD (~> 1.1.0)
+    - MJRefresh (= 3.1.15.7)
+    - PromisesObjC (~> 1.2.2)
+    - SDWebImage (~> 4.3.3)
+    - tinyxml (~> 2.1.0)
+  - PromisesObjC (1.2.2)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - tinyxml (2.1.0)
+  - WeexSDK (0.18.0)
+
+DEPENDENCIES:
+  - LibMMFoodFramework (~> 1.0.3)
+  - MMComonCompontFramework (~> 2.0.1)
+  - PromisesObjC (~> 1.2.2)
+  - WeexSDK (~> 0.18.0)
+
+SPEC REPOS:
+  https://gitee.com/zxfmpy/DWPrivateSpec:
+    - LibMMFoodFramework
+    - MMComonCompontFramework
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
+    - FMDB
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - PromisesObjC
+    - SDWebImage
+    - tinyxml
+    - WeexSDK
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
+  LibMMFoodFramework: 196c9dad47cbb5518fef7ddea6bce716f9c19a88
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MMComonCompontFramework: 9e0f01b54cbb871e97855688725d3ebf7768bbae
+  PromisesObjC: 3db4112f796a05782b4442364748f9126fea0b88
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  tinyxml: 41d718babd106ac5d39d4e98b43c835d3b9080d8
+  WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
+
+PODFILE CHECKSUM: f174f9613900c2c1d25b5e3981a63377c7739bb8
+
+COCOAPODS: 1.5.2

@@ -1,0 +1,6 @@
+framework module MMComonCompontFramework {
+  umbrella header "MMComonCompontFramework.h"
+
+  export *
+  module * { export * }
+}

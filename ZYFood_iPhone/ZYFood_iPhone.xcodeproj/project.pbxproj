@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F79F39FB95BD8A3584D30B /* Pods_ZYFood_iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4B84181BD50F3D1E25682E /* Pods_ZYFood_iPhone.framework */; };
+		BE0D3BBF20D3663F006B4658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0D3BBE20D3663E006B4658 /* Main.storyboard */; };
+		BE0D3BC120D36657006B4658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0D3BC020D36657006B4658 /* LaunchScreen.storyboard */; };
+		BE108468217D6D1300767299 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE108467217D6D1300767299 /* CoreMotion.framework */; };
+		BE129C1A20FC6E5C00D68463 /* AppDelegate+DWPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = BE129C1920FC6E5C00D68463 /* AppDelegate+DWPromise.m */; };
+		BE129C2020FC6F7F00D68463 /* AppDelegate+DWWeex.m in Sources */ = {isa = PBXBuildFile; fileRef = BE129C1F20FC6F7F00D68463 /* AppDelegate+DWWeex.m */; };
+		BE129C3D20FDEF3F00D68463 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE129C3C20FDEF3F00D68463 /* UserNotifications.framework */; };
+		BE129C4020FDF00300D68463 /* AppDelegate+DWNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BE129C3F20FDF00300D68463 /* AppDelegate+DWNotification.m */; };
+		BE4D26011CD34B9700276C65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D26001CD34B9700276C65 /* main.m */; };
+		BE4D260C1CD34B9700276C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4D260B1CD34B9700276C65 /* Assets.xcassets */; };
+		BE4D26241CD34F3800276C65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D261A1CD34F3800276C65 /* AppDelegate.m */; };
+		BE4D26751CD36B1400276C65 /* ZYRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D266E1CD36B1400276C65 /* ZYRootNavigationController.m */; };
+		BE4D26761CD36B1400276C65 /* ZYTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D26701CD36B1400276C65 /* ZYTableBarController.m */; };
+		BE5ABACE210977EC0084A1C0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5ABACD210977EC0084A1C0 /* libz.tbd */; };
+		BE64923320EE049800F5D175 /* ZYWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64923220EE049800F5D175 /* ZYWeexViewController.m */; };
+		BE64923F20EE11FC00F5D175 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = BE64923E20EE11FB00F5D175 /* index.js */; };
+		BE64924320EE15B500F5D175 /* ZYUserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64924220EE15B500F5D175 /* ZYUserModule.m */; };
+		BE64924720EE18E200F5D175 /* ZYMapWeexComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64924620EE18E200F5D175 /* ZYMapWeexComponent.m */; };
+		BE64924B20EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64924A20EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.m */; };
+		BE64924E20EE422700F5D175 /* WXMyCompoenent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64924D20EE422700F5D175 /* WXMyCompoenent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A124B6E2B4788088518E7B2 /* Pods-ZYFood_iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFood_iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFood_iPhone/Pods-ZYFood_iPhone.release.xcconfig"; sourceTree = "<group>"; };
+		B011D803FE17876842506F97 /* Pods-ZYFood_iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFood_iPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFood_iPhone/Pods-ZYFood_iPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0D3BBE20D3663E006B4658 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BE0D3BC020D36657006B4658 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE108467217D6D1300767299 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		BE129C1820FC6E5C00D68463 /* AppDelegate+DWPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+DWPromise.h"; sourceTree = "<group>"; };
+		BE129C1920FC6E5C00D68463 /* AppDelegate+DWPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DWPromise.m"; sourceTree = "<group>"; };
+		BE129C1E20FC6F7F00D68463 /* AppDelegate+DWWeex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+DWWeex.h"; sourceTree = "<group>"; };
+		BE129C1F20FC6F7F00D68463 /* AppDelegate+DWWeex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DWWeex.m"; sourceTree = "<group>"; };
+		BE129C3C20FDEF3F00D68463 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		BE129C3E20FDF00300D68463 /* AppDelegate+DWNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+DWNotification.h"; sourceTree = "<group>"; };
+		BE129C3F20FDF00300D68463 /* AppDelegate+DWNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DWNotification.m"; sourceTree = "<group>"; };
+		BE4D25FC1CD34B9700276C65 /* ZYFood_iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYFood_iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4D26001CD34B9700276C65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE4D260B1CD34B9700276C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE4D26101CD34B9700276C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4D26191CD34F3800276C65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE4D261A1CD34F3800276C65 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE4D26251CD3503B00276C65 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BE4D266D1CD36B1400276C65 /* ZYRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRootNavigationController.h; sourceTree = "<group>"; };
+		BE4D266E1CD36B1400276C65 /* ZYRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRootNavigationController.m; sourceTree = "<group>"; };
+		BE4D266F1CD36B1400276C65 /* ZYTableBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableBarController.h; sourceTree = "<group>"; };
+		BE4D26701CD36B1400276C65 /* ZYTableBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableBarController.m; sourceTree = "<group>"; };
+		BE5ABAC8210975E30084A1C0 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		BE5ABACD210977EC0084A1C0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BE5ABAD221099FD20084A1C0 /* ZYFood_iPhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYFood_iPhone.entitlements; sourceTree = "<group>"; };
+		BE64923120EE049800F5D175 /* ZYWeexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYWeexViewController.h; sourceTree = "<group>"; };
+		BE64923220EE049800F5D175 /* ZYWeexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYWeexViewController.m; sourceTree = "<group>"; };
+		BE64923E20EE11FB00F5D175 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		BE64924120EE15B500F5D175 /* ZYUserModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYUserModule.h; sourceTree = "<group>"; };
+		BE64924220EE15B500F5D175 /* ZYUserModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUserModule.m; sourceTree = "<group>"; };
+		BE64924520EE18E200F5D175 /* ZYMapWeexComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYMapWeexComponent.h; sourceTree = "<group>"; };
+		BE64924620EE18E200F5D175 /* ZYMapWeexComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMapWeexComponent.m; sourceTree = "<group>"; };
+		BE64924920EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
+		BE64924A20EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
+		BE64924C20EE422700F5D175 /* WXMyCompoenent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMyCompoenent.h; sourceTree = "<group>"; };
+		BE64924D20EE422700F5D175 /* WXMyCompoenent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXMyCompoenent.m; sourceTree = "<group>"; };
+		CC4B84181BD50F3D1E25682E /* Pods_ZYFood_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFood_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4D25F91CD34B9700276C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE108468217D6D1300767299 /* CoreMotion.framework in Frameworks */,
+				BE5ABACE210977EC0084A1C0 /* libz.tbd in Frameworks */,
+				BE129C3D20FDEF3F00D68463 /* UserNotifications.framework in Frameworks */,
+				03F79F39FB95BD8A3584D30B /* Pods_ZYFood_iPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FA1E3E9D5FF75CF26BF256C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE108467217D6D1300767299 /* CoreMotion.framework */,
+				BE5ABACD210977EC0084A1C0 /* libz.tbd */,
+				BE129C3C20FDEF3F00D68463 /* UserNotifications.framework */,
+				CC4B84181BD50F3D1E25682E /* Pods_ZYFood_iPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EDD90E3C736EB6EBB1D9357 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B011D803FE17876842506F97 /* Pods-ZYFood_iPhone.debug.xcconfig */,
+				6A124B6E2B4788088518E7B2 /* Pods-ZYFood_iPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE129C1620FC6E0100D68463 /* AppDelegateBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				BE129C1820FC6E5C00D68463 /* AppDelegate+DWPromise.h */,
+				BE129C1920FC6E5C00D68463 /* AppDelegate+DWPromise.m */,
+				BE129C1E20FC6F7F00D68463 /* AppDelegate+DWWeex.h */,
+				BE129C1F20FC6F7F00D68463 /* AppDelegate+DWWeex.m */,
+				BE129C3E20FDF00300D68463 /* AppDelegate+DWNotification.h */,
+				BE129C3F20FDF00300D68463 /* AppDelegate+DWNotification.m */,
+			);
+			path = AppDelegateBusiness;
+			sourceTree = "<group>";
+		};
+		BE4D25F31CD34B9700276C65 = {
+			isa = PBXGroup;
+			children = (
+				BE4D25FE1CD34B9700276C65 /* ZYFood_iPhone */,
+				BE4D25FD1CD34B9700276C65 /* Products */,
+				4EDD90E3C736EB6EBB1D9357 /* Pods */,
+				2FA1E3E9D5FF75CF26BF256C /* Frameworks */,
+				BE5ABAD121099F6A0084A1C0 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		BE4D25FD1CD34B9700276C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D25FC1CD34B9700276C65 /* ZYFood_iPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE4D25FE1CD34B9700276C65 /* ZYFood_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				BE5ABAD221099FD20084A1C0 /* ZYFood_iPhone.entitlements */,
+				BE0D3BBE20D3663E006B4658 /* Main.storyboard */,
+				BE129C1620FC6E0100D68463 /* AppDelegateBusiness */,
+				BE64923D20EE11EB00F5D175 /* TestFile */,
+				BE64923020EE043D00F5D175 /* ZYWeex */,
+				BE4D261F1CD34F3800276C65 /* ViewController */,
+				BE4D25FF1CD34B9700276C65 /* Supporting Files */,
+				BE4D260B1CD34B9700276C65 /* Assets.xcassets */,
+				BE4D26191CD34F3800276C65 /* AppDelegate.h */,
+				BE4D261A1CD34F3800276C65 /* AppDelegate.m */,
+			);
+			path = ZYFood_iPhone;
+			sourceTree = "<group>";
+		};
+		BE4D25FF1CD34B9700276C65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D3BC020D36657006B4658 /* LaunchScreen.storyboard */,
+				BE4D26101CD34B9700276C65 /* Info.plist */,
+				BE4D26001CD34B9700276C65 /* main.m */,
+				BE4D26251CD3503B00276C65 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4D261F1CD34F3800276C65 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BE4D266D1CD36B1400276C65 /* ZYRootNavigationController.h */,
+				BE4D266E1CD36B1400276C65 /* ZYRootNavigationController.m */,
+				BE4D266F1CD36B1400276C65 /* ZYTableBarController.h */,
+				BE4D26701CD36B1400276C65 /* ZYTableBarController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BE5ABAD121099F6A0084A1C0 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BE5ABAC8210975E30084A1C0 /* JSPatchPlatform.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		BE64923020EE043D00F5D175 /* ZYWeex */ = {
+			isa = PBXGroup;
+			children = (
+				BE64924820EE1C1200F5D175 /* WeexProtocol */,
+				BE64924420EE18AD00F5D175 /* Component */,
+				BE64924020EE158900F5D175 /* Module */,
+				BE64923120EE049800F5D175 /* ZYWeexViewController.h */,
+				BE64923220EE049800F5D175 /* ZYWeexViewController.m */,
+			);
+			path = ZYWeex;
+			sourceTree = "<group>";
+		};
+		BE64923D20EE11EB00F5D175 /* TestFile */ = {
+			isa = PBXGroup;
+			children = (
+				BE64923E20EE11FB00F5D175 /* index.js */,
+			);
+			path = TestFile;
+			sourceTree = "<group>";
+		};
+		BE64924020EE158900F5D175 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BE64924120EE15B500F5D175 /* ZYUserModule.h */,
+				BE64924220EE15B500F5D175 /* ZYUserModule.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BE64924420EE18AD00F5D175 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				BE64924520EE18E200F5D175 /* ZYMapWeexComponent.h */,
+				BE64924620EE18E200F5D175 /* ZYMapWeexComponent.m */,
+				BE64924C20EE422700F5D175 /* WXMyCompoenent.h */,
+				BE64924D20EE422700F5D175 /* WXMyCompoenent.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		BE64924820EE1C1200F5D175 /* WeexProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				BE64924920EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.h */,
+				BE64924A20EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.m */,
+			);
+			path = WeexProtocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4D25FB1CD34B9700276C65 /* ZYFood_iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4D26131CD34B9700276C65 /* Build configuration list for PBXNativeTarget "ZYFood_iPhone" */;
+			buildPhases = (
+				A77FA1827F21E5756AEF8035 /* [CP] Check Pods Manifest.lock */,
+				BE4D25F81CD34B9700276C65 /* Sources */,
+				BE4D25F91CD34B9700276C65 /* Frameworks */,
+				BE4D25FA1CD34B9700276C65 /* Resources */,
+				0AC8ABCE4036CE55EA633063 /* [CP] Copy Pods Resources */,
+				34D4952A4DF2EC0C9F1E9D17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYFood_iPhone;
+			productName = ZYFood_iPhone;
+			productReference = BE4D25FC1CD34B9700276C65 /* ZYFood_iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4D25F41CD34B9700276C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zxfmpy;
+				TargetAttributes = {
+					BE4D25FB1CD34B9700276C65 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M2R95ED272;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BE4D25F71CD34B9700276C65 /* Build configuration list for PBXProject "ZYFood_iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4D25F31CD34B9700276C65;
+			productRefGroup = BE4D25FD1CD34B9700276C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4D25FB1CD34B9700276C65 /* ZYFood_iPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4D25FA1CD34B9700276C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0D3BC120D36657006B4658 /* LaunchScreen.storyboard in Resources */,
+				BE0D3BBF20D3663F006B4658 /* Main.storyboard in Resources */,
+				BE4D260C1CD34B9700276C65 /* Assets.xcassets in Resources */,
+				BE64923F20EE11FC00F5D175 /* index.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC8ABCE4036CE55EA633063 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZYFood_iPhone/Pods-ZYFood_iPhone-resources.sh",
+				"${PODS_ROOT}/LibMMFoodFramework/LibMMFoodDemo/sdks/LibMMFoodFramework/resources/LibMMFood.bundle",
+				"${PODS_ROOT}/MMComonCompontFramework/MMCommonCompontDemo/sdks/MMComonCompontFramework/MMComonCompontFramework/resources/MMCommonBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LibMMFood.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMCommonBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYFood_iPhone/Pods-ZYFood_iPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D4952A4DF2EC0C9F1E9D17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZYFood_iPhone/Pods-ZYFood_iPhone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/WeexSDK/WeexSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/tinyxml/tinyxml.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/tinyxml.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYFood_iPhone/Pods-ZYFood_iPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A77FA1827F21E5756AEF8035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYFood_iPhone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4D25F81CD34B9700276C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE64924720EE18E200F5D175 /* ZYMapWeexComponent.m in Sources */,
+				BE4D26751CD36B1400276C65 /* ZYRootNavigationController.m in Sources */,
+				BE4D26761CD36B1400276C65 /* ZYTableBarController.m in Sources */,
+				BE129C4020FDF00300D68463 /* AppDelegate+DWNotification.m in Sources */,
+				BE64924320EE15B500F5D175 /* ZYUserModule.m in Sources */,
+				BE129C1A20FC6E5C00D68463 /* AppDelegate+DWPromise.m in Sources */,
+				BE4D26011CD34B9700276C65 /* main.m in Sources */,
+				BE64923320EE049800F5D175 /* ZYWeexViewController.m in Sources */,
+				BE64924E20EE422700F5D175 /* WXMyCompoenent.m in Sources */,
+				BE64924B20EE1C2900F5D175 /* ZYImgLoaderDefaultImpl.m in Sources */,
+				BE129C2020FC6F7F00D68463 /* AppDelegate+DWWeex.m in Sources */,
+				BE4D26241CD34F3800276C65 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE4D26111CD34B9700276C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE4D26121CD34B9700276C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE4D26141CD34B9700276C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B011D803FE17876842506F97 /* Pods-ZYFood_iPhone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZYFood_iPhone/ZYFood_iPhone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYFood_iPhone",
+					"$(PROJECT_DIR)/ZYFood_iPhone/SDKS/DWDynamicLib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZYFood_iPhone/PrefixHeader.pch;
+				INFOPLIST_FILE = ZYFood_iPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYFood_iPhone/SDKS/DWStaticLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxfmpy.food;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		BE4D26151CD34B9700276C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A124B6E2B4788088518E7B2 /* Pods-ZYFood_iPhone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZYFood_iPhone/ZYFood_iPhone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYFood_iPhone",
+					"$(PROJECT_DIR)/ZYFood_iPhone/SDKS/DWDynamicLib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZYFood_iPhone/PrefixHeader.pch;
+				INFOPLIST_FILE = ZYFood_iPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYFood_iPhone/SDKS/DWStaticLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxfmpy.food;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4D25F71CD34B9700276C65 /* Build configuration list for PBXProject "ZYFood_iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4D26111CD34B9700276C65 /* Debug */,
+				BE4D26121CD34B9700276C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4D26131CD34B9700276C65 /* Build configuration list for PBXNativeTarget "ZYFood_iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4D26141CD34B9700276C65 /* Debug */,
+				BE4D26151CD34B9700276C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE4D25F41CD34B9700276C65 /* Project object */;
+}
